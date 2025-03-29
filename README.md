@@ -7,6 +7,15 @@
 - 简易的 Markdown 语法支持。
 - 极其简单的调用和编辑方式。
 
+## 目录
+- [调用方式](#%E8%B0%83%E7%94%A8%E6%96%B9%E5%BC%8F)
+  - [使用按钮调用](#%E4%BD%BF%E7%94%A8%E6%8C%89%E9%92%AE%E8%B0%83%E7%94%A8)
+  - [使用触发方式调用](#%E9%80%9A%E8%BF%87%E8%A7%A6%E5%8F%91%E6%96%B9%E5%BC%8F%E8%B0%83%E7%94%A8)
+- [必要代码](#%E5%BF%85%E8%A6%81%E4%BB%A3%E7%A0%81)
+  - [定义 Toast 样式的 CSS 代码](#%E5%AE%9A%E4%B9%89-toast-%E6%A0%B7%E5%BC%8F%E7%9A%84-css-%E4%BB%A3%E7%A0%81)
+  - [引入 js 文件](#%E5%BC%95%E5%85%A5-js-%E6%96%87%E4%BB%B6)
+- [Markdown 语法](#markdown-%E8%AF%AD%E6%B3%95)
+
 ## 调用方式
 ### 使用按钮调用
 以下是一个完整的通过按钮调用 Toast 的方式，该页面简单编写了一个按钮，如果您需要更复杂的功能，那么需要您自行编写。
@@ -226,4 +235,15 @@
 ### 引入 js 文件
 ``` html
 <script src="https://sysyz-itcom.github.io/easytoast/toast.js"></script>
+```
+
+## Markdown 语法
+``` Bash
+可点击的链接文本
+[链接文本](https://example.com)
+```
+
+``` Bash
+加粗的文本
+**文本内容**
 ```
