@@ -1,4 +1,4 @@
-# easytoast
+# EasyToast
 
 可以在前端页面中调用的 Toast 通知组件，~~好奇怪的东西~~.
 
