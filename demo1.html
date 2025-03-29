@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Demo</title>
+    <style>
+        .toast-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .toast {
+            background-color: #333;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .toast a {
+            color: #00bfff;
+            text-decoration: none;
+        }
+
+        .toast a:hover {
+            text-decoration: underline;
+        }
+
+        .custom-toast {
+            background-color: rgb(83, 83, 83);
+            /* 红色背景 */
+        }
+
+        .toast-link:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            padding: 8px 16px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="showToast('top')">显示顶部Toast</button>
+
+    <script src="toast.js"></script>
+    <script>
+        function showToast() {
+            window.Toast.show('这是一个**Toast**示例，支持*斜体*和[链接](https://example.com)1234567890abcdefg123456789023456789', 'Alpha', {icon: 'fas fa-info-circle', titleIconMargin: '8px'});
+        }
+    </script>
+</body>
+
+</html>
