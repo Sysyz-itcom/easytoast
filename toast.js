@@ -1,4 +1,4 @@
-// Toast组件实现
+// 实现
 class Toast {
     constructor(options) {
         this.options = {
@@ -41,7 +41,7 @@ class Toast {
         content.innerHTML = this.parseMarkdown(message);
         toast.appendChild(content);
 
-        // 添加关闭按钮
+        // 关闭按钮
         const closeBtn = document.createElement('i');
         closeBtn.className = 'fas fa-times-circle close-icon';
         closeBtn.style.position = 'absolute';
@@ -79,7 +79,7 @@ class Toast {
         }, 300);
     }
 
-    // 添加Font Awesome CSS
+    // 添加Font Awesome CSS 感谢 Deepseek 鼎力支持
     addFontAwesome() {
         const link = document.createElement('link');
         link.rel = 'stylesheet';
@@ -87,7 +87,7 @@ class Toast {
         document.head.appendChild(link);
     }
 parseMarkdown(text) {
-    // 简单的Markdown解析
+    // Markdown
     return text
         .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // 加粗
         .replace(/\*(.*?)\*/g, '<em>$1</em>') // 斜体
